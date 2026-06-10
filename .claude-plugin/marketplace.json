@@ -1,29 +1,27 @@
 {
-  "name": "claude-scientific-writer",
+  "name": "math-studio",
   "metadata": {
-    "description": "Skills and setup for scientific writing (papers, grants, posters, clinical reports) using the scientific-writer toolkit.",
+    "description": "Skills and setup for mathematical research writing (papers, theses, posters, slides) — theorem-proof style, dynamical systems, reproducible simulations. Fork of claude-scientific-writer tailored for applied mathematics.",
     "version": "0.1.0",
-    "homepage": "https://github.com/K-Dense-AI/claude-scientific-writer"
+    "homepage": "https://github.com/rp4ri/math-studio"
   },
   "owner": {
-    "name": "K-Dense Inc.",
-    "email": "contact@k-dense.ai"
+    "name": "Rodrigo Paris (rp4ri)"
   },
   "plugins": [
     {
-      "name": "claude-scientific-writer",
-      "description": "Collection of scientific writer skills",
+      "name": "math-studio",
+      "description": "Collection of mathematical research writing skills",
       "source": "./",
       "strict": false,
       "skills": [
         "./skills/citation-management",
-        "./skills/clinical-decision-support",
-        "./skills/clinical-reports",
         "./skills/document-skills",
         "./skills/hypothesis-generation",
         "./skills/latex-posters",
         "./skills/literature-review",
         "./skills/markitdown",
+        "./skills/math-modeling",
         "./skills/paper-2-web",
         "./skills/peer-review",
         "./skills/research-grants",
@@ -33,10 +31,8 @@
         "./skills/scientific-schematics",
         "./skills/scientific-slides",
         "./skills/scientific-writing",
-        "./skills/treatment-plans",
         "./skills/venue-templates"
       ]
     }
   ]
 }
-

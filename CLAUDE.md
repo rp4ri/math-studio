@@ -388,3 +388,21 @@ Request: "Create a NeurIPS paper on attention mechanisms"
 - **When in doubt, add a figure** - visual content enhances all scientific communication
 - **PDF review via images** - never read PDFs directly
 - **Complete tasks fully** - never stop mid-task to ask permission
+
+## Math Studio — Applied Mathematics Conventions (fork additions)
+
+This fork (`math-studio`, rp4ri) targets mathematical modeling research. On top of the policies above:
+
+- **Models are derived, not declared.** Show step-by-step procedure (separation of variables,
+  partial fractions, linearization, Taylor) — committees value visible derivation. Box key results.
+- **Standard dynamical-systems pipeline:** fixed points → stability (sign of f', or Jacobian
+  eigenvalues) → bifurcations (tangency conditions, name the type) → basins/separatrices →
+  validation (state N; fitted vs structural parameters). See the `math-modeling` skill.
+- **Mandatory Limitations section** distinguishing structural/illustrative vs calibrated models,
+  and consistency vs causal claims.
+- **Python via `uv` only** (never bare pip): `uv run python script.py`. One versioned script per
+  figure, outputs to `results/`, every figure regenerable.
+- **PDF fallback without LaTeX:** HTML + MathJax (tex-svg) printed via headless Chrome
+  (`--print-to-pdf --virtual-time-budget=30000`). Verify rendered pages by converting to images.
+- **Anchor model ingredients in canonical lineages** (Granovetter, Wilson-Cowan, Ludwig-Holling,
+  Kramers, Scheffer...) and state explicitly which assembly is novel.

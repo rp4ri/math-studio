@@ -1,4 +1,16 @@
-# Claude Scientific Writer
+# Math Studio
+
+> **Fork of [claude-scientific-writer](https://github.com/K-Dense-AI/claude-scientific-writer) (K-Dense Inc., MIT) personalized for applied-mathematics research.**
+>
+> Changes vs upstream:
+> - Renamed plugin to `math-studio` (`/plugin marketplace add https://github.com/rp4ri/math-studio`).
+> - New skill **`math-modeling`**: dynamical systems papers — step-by-step derivations, fixed points / Jacobian stability / bifurcation pipeline, basins-of-attraction figures, mandatory limitations section, reproducible `uv` + numpy/scipy/matplotlib simulations, HTML+MathJax→Chrome PDF fallback when LaTeX is unavailable.
+> - Dropped clinical/market skills from the plugin manifest (clinical-decision-support, clinical-reports, treatment-plans, market-research-reports) — not relevant to this stack; files remain in `skills/` for upstream merge compatibility.
+> - Math-stack conventions appended to `CLAUDE.md`.
+
+---
+
+# Claude Scientific Writer (upstream README)
 
 [![PyPI version](https://img.shields.io/pypi/v/scientific-writer.svg)](https://pypi.org/project/scientific-writer/)
 [![Total Downloads](https://static.pepy.tech/badge/scientific-writer)](https://pepy.tech/project/scientific-writer)
